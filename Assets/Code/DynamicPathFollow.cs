@@ -9,6 +9,7 @@ public class DynamicPathFollow : MonoBehaviour {
     int path_index = 0;
     float arrival_radius = 1f;
 
+
 	protected AgentMovement agent;
 
 	Vector2 targetPosition = Vector2.zero;
