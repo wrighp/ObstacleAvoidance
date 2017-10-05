@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -669,13 +669,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAcceleration: 50
+  maxAcceleration: 10
   maxSpeed: 2.2
-  acceleration: 50
-  maxAngularAcceleration: 100
+  acceleration: 1
+  maxAngularAcceleration: 10
   maxAngularSpeed: 50
-  angularAcceleration: 5
+  angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
+  rb: {fileID: 0}
 --- !u!50 &1211137627
 Rigidbody2D:
   serializedVersion: 4
@@ -708,6 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_path: {fileID: 1950912123}
+  coll_test: {fileID: 0}
 --- !u!4 &1211137629
 Transform:
   m_ObjectHideFlags: 0
@@ -727,7 +729,7 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1211137625}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -962,6 +964,7 @@ GameObject:
   - component: {fileID: 1757981322}
   - component: {fileID: 1757981321}
   - component: {fileID: 1757981325}
+  - component: {fileID: 1757981326}
   m_Layer: 0
   m_Name: path follower (1)
   m_TagString: Untagged
@@ -980,13 +983,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAcceleration: 50
+  maxAcceleration: 10
   maxSpeed: 2.2
-  acceleration: 50
-  maxAngularAcceleration: 100
+  acceleration: 1
+  maxAngularAcceleration: 10
   maxAngularSpeed: 50
-  angularAcceleration: 5
+  angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
+  rb: {fileID: 0}
 --- !u!50 &1757981322
 Rigidbody2D:
   serializedVersion: 4
@@ -1019,6 +1023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_path: {fileID: 1807640936}
+  coll_test: {fileID: 1211137626}
 --- !u!4 &1757981324
 Transform:
   m_ObjectHideFlags: 0
@@ -1038,7 +1043,7 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1757981320}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1047,6 +1052,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.2
+--- !u!114 &1757981326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757981320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106e46d88b4c684b8406c99b07173db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1807640935
 GameObject:
   m_ObjectHideFlags: 0
