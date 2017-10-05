@@ -198,10 +198,10 @@ MonoBehaviour:
   agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -323,10 +323,10 @@ MonoBehaviour:
   agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -452,10 +452,10 @@ MonoBehaviour:
   agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -688,10 +688,10 @@ MonoBehaviour:
   agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -855,10 +855,10 @@ MonoBehaviour:
   agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -1136,10 +1136,10 @@ MonoBehaviour:
   agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -1282,10 +1282,10 @@ MonoBehaviour:
   agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -1465,10 +1465,10 @@ MonoBehaviour:
   agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -1680,10 +1680,10 @@ MonoBehaviour:
   agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -1967,10 +1967,10 @@ MonoBehaviour:
   agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -2053,10 +2053,10 @@ MonoBehaviour:
   agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
@@ -2310,10 +2310,10 @@ MonoBehaviour:
   agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
   indicatorLineLength: 0.5
   maxAcceleration: 10
-  maxSpeed: 2.2
+  maxSpeed: 2
   acceleration: 1
-  maxAngularAcceleration: 3
-  maxAngularSpeed: 50
+  maxAngularAcceleration: 1
+  maxAngularSpeed: 1
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
   rb: {fileID: 0}
