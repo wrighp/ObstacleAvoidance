@@ -32,6 +32,6 @@ public class DynamicPathFollow : MonoBehaviour {
 	}
 
 	void LateUpdate(){
-		PlayerDebug.DrawLine (transform.position,  my_path.points[path_index].position, Color.red);
+		//PlayerDebug.DrawLine (transform.position,  my_path.points[path_index].position, Color.red);
 	}
 }
