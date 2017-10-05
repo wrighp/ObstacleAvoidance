@@ -22,7 +22,6 @@ public class ConeCheck : MonoBehaviour {
 
 		GameObject avoidTarget = null;
 		float lowestDistance = maxDistance;
-		float targetSign = 0; //retained in order to decide which way to turn away to
 
 		//Get closest target within cone to avoid
 		foreach(GameObject go in Obstacles.GetGameObjects()){
@@ -30,14 +29,9 @@ public class ConeCheck : MonoBehaviour {
 			if(go == gameObject){
 				continue;
 			}
+
 			Vector2 vectorDirection = go.transform.position - transform.position;
-
 			Vector2 forwardDirection = transform.up;
-
-			//get relative angle (aiming left or right of) to target angle with simple cross product
-			Vector3 cross = Vector3.Cross(vectorDirection, forwardDirection);
-			float sign = Mathf.Sign(cross.z); //Used for determining wether to swivel away left or right
-
 			//Dot product to find angle (function then converts to 0-180 degrees)
 			float angle = Vector2.Angle (vectorDirection, forwardDirection);
 
@@ -49,8 +43,7 @@ public class ConeCheck : MonoBehaviour {
 
 				if(distance < lowestDistance){
 					lowestDistance = distance;
-					avoidTarget = go;
-					targetSign = sign; 
+					avoidTarget = go; 
 				}
 			}
 		}
@@ -61,11 +54,18 @@ public class ConeCheck : MonoBehaviour {
 		}
 
 		//Else do avoidance on target
-		//Quaternion newDirection = Quaternion.AngleAxis(90f * targetSign, transform.up);
-		agent.targetDirection = (Quaternion.Euler(0,0,45f * targetSign) *transform.up).normalized;
+		agent.targetDirection = AvoidDirection(transform, avoidTarget.transform.position);
 		PlayerDebug.DrawRay(transform.position,agent.targetDirection,new Color(1f,0,0f,1f));
 	}
 
+	static Vector2 AvoidDirection(Transform transform, Vector3 targetPosition){
+		Vector2 vectorDirection = targetPosition - transform.position;
+		Vector2 forwardDirection = transform.up;
+		//get relative angle (aiming left or right of) to target angle with simple cross product
+		Vector3 cross = Vector3.Cross(vectorDirection, forwardDirection);
+		float sign = Mathf.Sign(cross.z); //Used for determining wether to swivel away left or right
+		return (Quaternion.Euler(0,0,45f * sign) *transform.up).normalized;
+	}
 
 	void LateUpdate(){
 		
