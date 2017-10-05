@@ -287,10 +287,11 @@ MonoBehaviour:
   maxAcceleration: 50
   maxSpeed: 2.2
   acceleration: 50
-  maxAngularAcceleration: 100
-  maxAngularSpeed: 50
-  angularAcceleration: 5
+  maxAngularAcceleration: 50
+  maxAngularSpeed: 150
+  angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
+  rb: {fileID: 0}
 --- !u!50 &128546189
 Rigidbody2D:
   serializedVersion: 4
@@ -323,6 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_path: {fileID: 2113703295}
+  coll_test: {fileID: 0}
 --- !u!4 &128546191
 Transform:
   m_ObjectHideFlags: 0
@@ -1123,10 +1125,11 @@ MonoBehaviour:
   maxAcceleration: 50
   maxSpeed: 2.2
   acceleration: 50
-  maxAngularAcceleration: 100
-  maxAngularSpeed: 50
-  angularAcceleration: 5
+  maxAngularAcceleration: 50
+  maxAngularSpeed: 150
+  angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
+  rb: {fileID: 0}
 --- !u!50 &1686515552
 Rigidbody2D:
   serializedVersion: 4
@@ -1140,7 +1143,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1159,6 +1162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_path: {fileID: 1363177180}
+  coll_test: {fileID: 0}
 --- !u!4 &1686515554
 Transform:
   m_ObjectHideFlags: 0
