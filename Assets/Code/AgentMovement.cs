@@ -19,8 +19,13 @@ public class AgentMovement : MonoBehaviour {
 
 	void Awake(){
 		rb = GetComponent<Rigidbody2D> ();
-	}
 
+	}
+	void Start(){
+		//Set absolute rotation to lock it
+		float targetAngle = Mathf.Atan2 (targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+		transform.rotation = Quaternion.AngleAxis (targetAngle - 90f, Vector3.forward);
+	}
 	void Update(){
 		PlayerDebug.DrawRay (transform.position, transform.up * indicatorLineLength, Color.white);
 		PlayerDebug.DrawCircle(transform.position, GetComponent<CircleCollider2D>().radius,agentColor);
