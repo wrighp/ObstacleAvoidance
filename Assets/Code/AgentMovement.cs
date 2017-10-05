@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent (typeof (Rigidbody2D))]
 public class AgentMovement : MonoBehaviour {
 
+	public Color agentColor = Color.blue;
+	public float indicatorLineLength = .5f;
 	public float maxAcceleration;
 	public float maxSpeed;
 	public float acceleration; //Should be scaled between 0 and 1
@@ -19,11 +21,14 @@ public class AgentMovement : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 	}
 
-
+	void Update(){
+		PlayerDebug.DrawRay (transform.position, transform.up * indicatorLineLength, Color.white);
+		PlayerDebug.DrawCircle(transform.position, GetComponent<CircleCollider2D>().radius,agentColor);
+	}
 	void FixedUpdate(){
-
+		
 		rb.AddForce(transform.up * Mathf.Min(maxAcceleration, acceleration * maxAcceleration));
-		PlayerDebug.DrawRay (transform.position, transform.up, Color.white);
+
 		//This clamping is not actually accurate as the addForce will increase the speed for a frame after
 		//If you disable force when speed is over max speed that creates hysteresis
 		//A correct force reduction is more complicated
@@ -54,7 +59,7 @@ public class AgentMovement : MonoBehaviour {
 			transform.rotation = Quaternion.AngleAxis (targetAngle - 90f, Vector3.forward);
 		}
 		else {
-			rb.AddTorque (-sign * angularAcceleration * maxAngularAcceleration);
+			rb.AddTorque (-sign * angularAcceleration * maxAngularAcceleration, ForceMode2D.Force);
 		}
 
 

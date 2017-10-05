@@ -134,7 +134,7 @@ public class PlayerDebug : MonoBehaviour {
 		mat.color = Color.white;
 
 		const float totalRadians = Mathf.PI * 2f;
-		float angleInc = totalRadians / circleSegments;
+		float angleInc = Mathf.Max(0, totalRadians / (int)(circleSegments));
 
 		for (int i = 0, circleCentersCount = circleCenters.Count; i < circleCentersCount; i++) {
 			Vector3 center = circleCenters [i];

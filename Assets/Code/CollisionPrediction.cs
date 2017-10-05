@@ -70,6 +70,10 @@ public class CollisionPrediction : MonoBehaviour {
     }
 
     void OnDrawGizmos () {
+		//In case of scene exit
+		if(all_agents == null){
+			return;
+		}
         for (int i = 0; i < all_agents.Length; i++) {
             if (all_agents[i] != my_agent) {
                 if (Vector3.Dot(get_position_at_time_of_approach_to(all_agents[i])-transform.position, my_agent.rb.velocity) > 0) {
