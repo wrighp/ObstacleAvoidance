@@ -183,7 +183,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &40689671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -306,7 +308,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &45690554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -433,7 +437,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &151576451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,6 +449,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -667,7 +673,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &538613394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,6 +685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -832,7 +840,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &645110362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,6 +852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -1111,7 +1121,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &1022495281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -1255,7 +1267,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &1116702204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1267,6 +1279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -1448,6 +1462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -1515,7 +1531,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &1211137631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1649,7 +1665,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &1459290198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1661,6 +1677,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -1934,7 +1952,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &1681012505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,6 +1964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 1, g: 0, b: 0.18620682, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -2030,6 +2050,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
@@ -2097,7 +2119,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &1757981326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2273,7 +2295,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.1
 --- !u!114 &1986229901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2285,6 +2307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849cc7d72af1dd438b8276d24aed045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentColor: {r: 0.31336507, g: 0.824991, b: 0.9264706, a: 1}
+  indicatorLineLength: 0.5
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1

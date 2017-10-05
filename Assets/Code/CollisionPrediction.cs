@@ -7,8 +7,8 @@ public class CollisionPrediction : MonoBehaviour {
 
     AgentMovement my_agent;
     AgentMovement[] all_agents;
-    const float collision_distance = 0.5f;
-    const float vision_range = 1f;
+    const float collision_distance = 0.3f;
+    const float vision_range = 2f;
 
     void Start () {
         my_agent = GetComponent<AgentMovement>();
@@ -28,7 +28,7 @@ public class CollisionPrediction : MonoBehaviour {
 			                Vector3 cross = Vector3.Cross(vectorDirection, forwardDirection);
 			                float sign = Mathf.Sign(cross.z);
 
-                            my_agent.targetDirection = (Quaternion.Euler(0,0,45f * sign) *transform.up).normalized;
+                            my_agent.targetDirection = (Quaternion.Euler(0,0,90f * sign) *transform.up).normalized;
                         }
                     }
                 }
