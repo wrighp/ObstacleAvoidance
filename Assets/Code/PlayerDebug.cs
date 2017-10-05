@@ -6,7 +6,7 @@ public class PlayerDebug : MonoBehaviour {
 
 	public static PlayerDebug instance;
 	public Material mat;
-	public float circleSegments = 20;
+	public int circleSegments = 16;
 	List<Vector3> verts;
 	List<Color> colors;
 	List<float> times;
@@ -134,7 +134,7 @@ public class PlayerDebug : MonoBehaviour {
 		mat.color = Color.white;
 
 		const float totalRadians = Mathf.PI * 2f;
-		float angleInc = Mathf.Max(0, totalRadians / (int)(circleSegments));
+		float angleInc = Mathf.Max(0, totalRadians / circleSegments);
 
 		for (int i = 0, circleCentersCount = circleCenters.Count; i < circleCentersCount; i++) {
 			Vector3 center = circleCenters [i];
