@@ -55,7 +55,7 @@ public class ConeCheck : MonoBehaviour {
 
 		//Else do avoidance on target
 		agent.targetDirection = AvoidDirection(transform, avoidTarget.transform.position);
-		PlayerDebug.DrawRay(transform.position,agent.targetDirection,new Color(1f,0,0f,1f));
+		//PlayerDebug.DrawRay(transform.position,agent.targetDirection,new Color(1f,0,0f,1f));
 	}
 
 	static Vector2 AvoidDirection(Transform transform, Vector3 targetPosition){
@@ -64,7 +64,7 @@ public class ConeCheck : MonoBehaviour {
 		//get relative angle (aiming left or right of) to target angle with simple cross product
 		Vector3 cross = Vector3.Cross(vectorDirection, forwardDirection);
 		float sign = Mathf.Sign(cross.z); //Used for determining wether to swivel away left or right
-		return (Quaternion.Euler(0,0,45f * sign) *transform.up).normalized;
+		return (Quaternion.Euler(0,0,90f * sign) *transform.up).normalized;
 	}
 
 	void LateUpdate(){
