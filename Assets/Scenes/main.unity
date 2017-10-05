@@ -672,7 +672,7 @@ MonoBehaviour:
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
-  maxAngularAcceleration: 10
+  maxAngularAcceleration: 3
   maxAngularSpeed: 50
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
@@ -709,7 +709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_path: {fileID: 1950912123}
-  coll_test: {fileID: 0}
 --- !u!4 &1211137629
 Transform:
   m_ObjectHideFlags: 0
@@ -986,7 +985,7 @@ MonoBehaviour:
   maxAcceleration: 10
   maxSpeed: 2.2
   acceleration: 1
-  maxAngularAcceleration: 10
+  maxAngularAcceleration: 3
   maxAngularSpeed: 50
   angularAcceleration: 1
   targetDirection: {x: 0.13286757, y: -0.09276557}
@@ -1004,7 +1003,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1023,7 +1022,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_path: {fileID: 1807640936}
-  coll_test: {fileID: 1211137626}
 --- !u!4 &1757981324
 Transform:
   m_ObjectHideFlags: 0
