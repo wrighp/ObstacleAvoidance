@@ -13,7 +13,7 @@ public class AgentMovement : MonoBehaviour {
 	public float maxAngularSpeed;
 	public float angularAcceleration; //Scale between 0 and 1
 	public Vector2 targetDirection = Vector2.zero;
-	Rigidbody2D rb;
+	public Rigidbody2D rb;
 
 	void Awake(){
 		rb = GetComponent<Rigidbody2D> ();
